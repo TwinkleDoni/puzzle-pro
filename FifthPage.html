@@ -1,0 +1,34 @@
+<html>
+<head><link rel="Stylesheet" href="mystyles.css">
+<title>Destination</title></head>
+<body>
+<marquee style="color:red">Solve the mystery</marquee>
+<h2 align=center>Here we came to the end of the mystery...</h2>
+<h2 align=center><p>According to you who may be the murderer or is it a suicide???<br>
+Think carefully and analyze all the situations and timings...<br></p></h2>
+<h3>1.Brother - who was jealous of Alex<br>
+2.Business partner who is angry over Alex's affair with his sister<br>
+3.Wife who was tortured for years and knew about Alex's affair<br>
+4.Girlfriend who was blackmailed by Alex<br>
+5.Servant(step brother) who hated Alex<br>
+6.None of the above<br></h3>
+<script>
+function verify(){
+   var x=document.form1.t1.value;
+   if(x=="wife"){
+     document.write("<h1 align=center>Congratulations wife it is....</h1>");
+document.write("<h1 align=center>She had her revenge at last and is free now.</h1>");
+document.write("<h1 align=center>Nice having you here..</h1>");
+} 
+else{
+alert("Sorry, Your analysis was wrong...Please restart to analyze the crime once again");
+}
+}
+</script>
+<form name=form1>
+<input type=text id=t1>
+<button type=button onclick="verify()">Submit</button>
+</form>
+<a href="firstPage.html">Restart</a>
+<body>
+</html>
